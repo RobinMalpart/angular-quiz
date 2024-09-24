@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { QuizService } from "../../shared/services/quiz.service";
+import { QuizService } from "../../shared/services/quiz/quiz.service";
 
 @Component({
   selector: 'app-answer',

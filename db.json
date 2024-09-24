@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Science"
+    },
+    {
+      "id": 2,
+      "name": "History"
+    },
+    {
+      "id": 3,
+      "name": "Geography"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "password123",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "username": "jane_doe",
+      "password": "password456",
+      "email": "jane@example.com"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "questionLabel": "What is the capital of France?",
+      "category_id": 3
+    },
+    {
+      "id": 2,
+      "questionLabel": "What is the boiling point of water?",
+      "category_id": 1
+    }
+  ],
+  "answers": [
+    {
+      "id": 1,
+      "questionId": 1,
+      "answer": "Paris",
+      "isCorrect": true
+    },
+    {
+      "id": 2,
+      "questionId": 1,
+      "answer": "London",
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "questionId": 1,
+      "answer": "Berlin",
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "questionId": 2,
+      "answer": "100°C",
+      "isCorrect": true
+    },
+    {
+      "id": 5,
+      "questionId": 2,
+      "answer": "90°C",
+      "isCorrect": false
+    },
+    {
+      "id": 6,
+      "questionId": 2,
+      "answer": "80°C",
+      "isCorrect": false
+    }
+  ]
+}
