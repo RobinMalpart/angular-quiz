@@ -1,9 +1,12 @@
 <div>
     <h1 class="text-center">Categories</h1>
     <h2 class="text-center">Joueur : {{ playerName }}</h2>
+    <input type="text" placeholder="Rechercher une catégorie..." [(ngModel)]="search" class="search-bar"/>
+    <button (click)="resetSearch()">X</button>
     <div class="flex gap-5">
-        <button *ngFor="let category of categories" class="card rounded bg-green-500 p-12 hover-cat" (click)="navigateToQuiz(category.id)">
+        <button *ngFor="let category of filterCategories()" class="card rounded bg-green-500 p-12 hover-cat" (click)="navigateToQuiz(category.id)">
             {{ category.name }}
         </button>
+        
     </div>
 </div>

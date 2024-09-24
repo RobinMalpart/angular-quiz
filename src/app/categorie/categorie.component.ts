@@ -11,6 +11,7 @@ import { Router } from "@angular/router";
 export class CategorieComponent implements OnInit {
   categories = this.categorie.listCategorie;
   playerName = '';
+  search = '';
 
   constructor(
     private categorie: CategorieService,
@@ -28,5 +29,13 @@ export class CategorieComponent implements OnInit {
 
   navigateToQuiz(categoryId: number) {
     this.router.navigate(['/quiz', categoryId, this.playerName]);
+  }
+
+  filterCategories() {
+    return this.categories.filter((categorie) => categorie.name.toLowerCase().includes(this.search.toLowerCase()));
+  }
+
+  resetSearch() {
+    this.search = '';
   }
 }

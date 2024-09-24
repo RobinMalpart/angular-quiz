@@ -46,11 +46,12 @@ export class QuizService {
           this.quizContent.push({
               id: question.id,
               question: question.questionLabel,
-              answers
+              answers: answers
           });
         });
       }
     });
+    console.log(this.quizContent);
   }
 
   resetQuiz() {
